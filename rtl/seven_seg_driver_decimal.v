@@ -4,7 +4,7 @@ module seven_seg_driver_decimal(
 );
 
 always @(*) begin
-    display_out = '1;
+    display_out = {7{1'b1}};
     case(number)
         4'h0 : display_out = 7'b0000001;
         4'h1 : display_out = 7'b1001111;
